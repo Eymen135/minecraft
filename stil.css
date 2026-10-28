@@ -1,0 +1,54 @@
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#83c9f5;color:#fff;font-family:system-ui,Arial,sans-serif;touch-action:none}#oyun,#oyun canvas{position:fixed;inset:0;width:100%;height:100%;display:block}#ust{position:fixed;z-index:2;top:10px;left:10px;right:10px;display:flex;justify-content:space-between;align-items:center;padding:10px 13px;border-radius:12px;background:#10212bd9;border:1px solid #ffffff30;pointer-events:none}#ipucu{position:fixed;z-index:2;top:65px;left:10px;padding:8px 10px;background:#10212bbd;border-radius:9px;font-size:11px;line-height:1.5;pointer-events:none}#nişangah{position:fixed;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);font-size:24px;font-weight:900;text-shadow:0 1px 3px #000;pointer-events:none}button{border:1px solid #ffffff70;background:#182b37e8;color:#fff;border-radius:12px;padding:10px;font-weight:800;touch-action:none;user-select:none}button:active{background:#477c55;transform:scale(.97)}#hotbar{position:fixed;z-index:3;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:5px;padding:5px;border-radius:14px;background:#101820bd;border:1px solid #ffffff40}.slot{width:55px;height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:19px;padding:3px}.slot small{font-size:9px}.slot.secili{border:2px solid #ffe16a;box-shadow:0 0 0 2px #ffe16a55}#mobilKontrol{position:fixed;z-index:3;inset:0;pointer-events:none}#joystick{position:absolute;left:12px;bottom:82px;display:flex;flex-direction:column;align-items:center;gap:5px;pointer-events:auto}#joystick>div{display:flex;gap:5px}#joystick button{width:47px;height:44px;padding:0;font-size:17px;background:#142936d9}#joystick #unused{display:none}#joystick button[data-move=zipla]{width:98px;font-size:11px}#eylemler{position:absolute;right:10px;bottom:85px;display:flex;flex-direction:column;gap:6px;pointer-events:auto}#eylemler button{min-width:75px;min-height:43px;font-size:11px}.panel{background:#12232deF;border:1px solid #ffffff50;border-radius:16px;box-shadow:0 10px 35px #0005}#baslangic{position:fixed;z-index:10;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;background:linear-gradient(#102a3b80,#08131be8)}.baslaKart{width:min(390px,94vw);padding:23px;text-align:center}.logo{font-size:45px}.baslaKart h1{margin:4px 0;font-size:30px;letter-spacing:2px}.baslaKart p{color:#cfe5f2}.baslaKart ul{text-align:left;line-height:1.9;font-size:13px;padding-left:24px}.baslaKart #basla{width:100%;padding:14px;background:#258b49;font-size:16px}.mini{font-size:10px!important}.gizli{display:none!important}#envanterPanel{position:fixed;z-index:8;left:50%;top:50%;transform:translate(-50%,-50%);width:min(330px,90vw);padding:18px}#envanterPanel h2{margin-top:0}#kaynaklar{line-height:2;font-size:14px}#envanterKapat{width:100%;margin-top:10px}#mesaj{position:fixed;z-index:5;top:42%;left:50%;transform:translate(-50%,-50%);padding:10px 15px;border-radius:10px;background:#101e2be8;font-weight:800;display:none;pointer-events:none}@media(min-width:850px){#mobilKontrol{opacity:.8}#ipucu{font-size:12px}.slot{width:62px;height:60px}}@media(max-width:390px){.slot{width:44px;height:48px}.slot small{font-size:8px}#hotbar{gap:2px}#joystick{left:7px;bottom:72px}#eylemler{right:7px;bottom:76px}}
+/* Minecraft-inspired chunky pixel controls and hotbar */
+button{position:relative;border-radius:3px;border:2px solid #1d211b;background:#777d75;color:#fff;text-shadow:2px 2px 0 #30352d;box-shadow:inset 2px 2px 0 #c7cec0,inset -3px -3px 0 #42483f,0 3px 0 #111812;transition:filter .08s,transform .08s}
+button:active{background:#9aab86;filter:brightness(1.12);transform:translateY(2px);box-shadow:inset 2px 2px 0 #c7cec0,inset -2px -2px 0 #42483f,0 1px 0 #111812}
+#ust{border-radius:3px;background:#26382bdc;border:2px solid #141b13;box-shadow:inset 0 0 0 2px #ffffff18}
+#hotbar{gap:3px;padding:5px;border-radius:3px;background:#282b28eF;border:3px solid #101310;box-shadow:0 3px 0 #101310,inset 0 0 0 2px #777}
+.slot{width:59px;height:58px;border-radius:2px;background:#555b54;border:2px solid #20251f;box-shadow:inset 2px 2px 0 #8b9387,inset -2px -2px 0 #343a32;text-shadow:1px 1px #111}
+.slot.secili{border:3px solid #fff;outline:2px solid #222;box-shadow:inset 2px 2px 0 #a7b09f,inset -2px -2px 0 #343a32,0 0 0 1px #fff}
+#joystick button{border-radius:3px;background:#697366eF;border:2px solid #20271e;box-shadow:inset 2px 2px 0 #b6c1ad,inset -3px -3px 0 #3b4537,0 3px 0 #111812}
+#joystick button[data-move=zipla]{background:#639d43;font-size:12px}
+#eylemler button{min-width:82px;background:#697366f2;border-radius:3px;border:2px solid #20271e;box-shadow:inset 2px 2px 0 #b6c1ad,inset -3px -3px 0 #3b4537,0 3px 0 #111812}
+#eylemler #kir{background:#8e6139}#eylemler #koy{background:#4d8043}#eylemler #envanter{background:#6a6f83}
+@media(max-width:390px){.slot{width:45px;height:49px}}
+
+/* Scrollable Minecraft-style hotbar for the expanded block set */
+#hotbar{max-width:calc(100vw - 14px);overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
+#hotbar .slot{flex:0 0 52px}
+@media(max-width:520px){#hotbar .slot{flex-basis:43px;height:47px;padding:2px;font-size:16px}#hotbar .slot small{font-size:7px}}
+
+/* Adventure inventory, item hotbar and crafting panel */
+#hotbar .item-slot{font-size:22px;color:#d5d9d2;min-width:42px;position:relative}
+#hotbar .item-slot small{position:absolute;right:3px;bottom:1px;font-size:10px}
+#hotbar .item-slot.has-item{color:#fff;background:#59674f}
+#hotbar .item-slot.secili{border:3px solid #fff;outline:2px solid #222}
+#envanterPanel{width:min(760px,94vw);max-height:84vh;overflow:auto;top:50%;}
+.envanter-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.envanter-grid h3{margin:8px 0;font-size:14px;color:#d8e9ce}
+#envanterSlotlari{display:grid;grid-template-columns:repeat(5,minmax(35px,1fr));gap:4px}
+.inv-slot{min-height:42px;background:#3e493c;border:2px solid #20271e;border-radius:3px;padding:3px;font-size:11px;overflow-wrap:anywhere}
+#blokSecimi{display:flex;flex-wrap:wrap;gap:5px}
+.block-choice{padding:7px 9px;font-size:11px}
+#tarifler{display:grid;grid-template-columns:1fr;gap:6px}
+.recipe{display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:left;font-size:11px;padding:8px}
+.recipe span{display:block;font-weight:500;color:#e2e8dc}
+#maceraDurumu{font-size:12px;line-height:1.6;background:#263529;padding:10px;border:1px solid #596b55}
+@media(max-width:520px){.envanter-grid{grid-template-columns:1fr}#envanterPanel{max-height:78vh;padding:12px}.recipe{font-size:10px}}
+
+#eylemler #gorunum{background:#6a6f83}#eylemler #portal{background:#674d83;font-size:10px}
+
+/* Manual 4x4 crafting grid and visual inventory icons */
+#envanterSlotlari{grid-template-columns:repeat(5,minmax(38px,1fr));gap:5px}
+.inv-slot{position:relative;display:flex;align-items:center;justify-content:center;min-height:48px;font-size:22px;padding:3px;background:#555b54;border:2px solid #20251f;border-radius:2px;box-shadow:inset 2px 2px 0 #8b9387,inset -2px -2px 0 #343a32}
+.inv-slot small{position:absolute;right:3px;bottom:1px;font-size:11px;color:#fff;text-shadow:1px 1px #000}
+#kaynaklar{display:flex;flex-wrap:wrap;gap:5px;line-height:1.2}
+.resource-chip{display:flex;align-items:center;gap:5px;min-width:54px;justify-content:center;padding:7px;background:#454c42}
+.resource-chip span{font-size:19px}.resource-chip b{font-size:12px}.resource-chip.picked{outline:2px solid #ffe16a;background:#647b50}
+#craftGrid{display:grid;grid-template-columns:repeat(4,minmax(42px,1fr));gap:4px;max-width:330px;padding:7px;background:#272c27;border:3px solid #101410;box-shadow:inset 0 0 0 2px #697064}
+.craft-cell{height:54px;min-width:0;padding:2px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:23px;background:#555b54;border:2px solid #20251f;border-radius:2px;box-shadow:inset 2px 2px 0 #8b9387,inset -2px -2px 0 #343a32}
+.craft-cell small{font-size:8px;line-height:1;color:#f2f4ed;max-width:100%;overflow:hidden}
+.craft-cell.filled{background:#68745e}
+#craftOutput{min-height:60px;margin-top:8px;max-width:330px}
+.craft-result{width:100%;min-height:58px;display:flex;align-items:center;gap:9px;text-align:left;background:#526747;padding:8px}
+.craft-result span{font-size:25px}.craft-result b{font-size:12px}.craft-result small{display:block;font-size:10px}.craft-result.empty{display:flex;align-items:center;justify-content:center;gap:5px;background:#303630;text-align:center;color:#aeb5aa;font-size:12px}
+@media(max-width:520px){#craftGrid{max-width:100%;gap:3px;padding:5px}.craft-cell{height:47px;font-size:20px}.envanter-grid{grid-template-columns:1fr}}
